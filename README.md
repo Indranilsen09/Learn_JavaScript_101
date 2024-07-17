@@ -1,7 +1,7 @@
 # Learn_JavaScript_101
 A beginner friendly Repository for learning JavaScript from Scratch.
 
-This Repository contains all the basics of Javascripts from scratch - instead of having multiple readme's,
+This Repository contains all the basics of Javascripts from scratch - instead of having multiple readme's,<br>
 I have added all the Explanation inside the code block as comments.
 
 Feel Free to Contribute if you have anything to add.<br>
