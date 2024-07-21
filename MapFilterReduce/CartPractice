@@ -1,0 +1,53 @@
+let cart = [
+    {name: "iphone", price:119900},
+    {name: "HomeSurround", price:9999},
+    {name: "Bike", price:90000},
+    {name: "PS5", price:64000},
+    {name: "4KOLEDDisplay", price:120320}
+
+];
+
+//Question1: Each and Every item has 10% discount, Return an array with the Final price
+//Question2: Lets say you have only 100000Rs in your pocket what are the items that you can buy
+//Question3: Find out the total pricecount of the cart.
+
+//Answer 1: Will use map() func to return a new array with 10% discount
+let FinalPrice = cart.map((e) =>{
+    return e.price*0.9;
+});
+console.log(FinalPrice);
+//(5) [107910, 8999.1, 81000, 57600, 108288]
+//Mapping final values to cart
+for(item in cart)
+    {
+        cart[item].price=FinalPrice[item];
+        
+    }
+console.log(JSON.stringify(cart));
+/*[{"name":"iphone","price":107910},
+{"name":"HomeSurround","price":8999.1},
+{"name":"Bike","price":81000},
+{"name":"PS5","price":57600},
+{"name":"4KOLEDDisplay","price":108288}]
+*/
+//___________________________________________________________________________________________________
+
+
+//Answer 2: Will use filter() func to return a new array of Item which is affordable
+//i.e Under 100000;
+
+let affordable = cart.filter((e)=> e.price<100000);
+console.log(JSON.stringify(affordable));
+/*
+[{"name":"HomeSurround","price":8999.1},
+{"name":"Bike","price":81000},
+{"name":"PS5","price":57600}]
+*/
+//___________________________________________________________________________________________________
+
+
+//Answer 3: Counting the total value of the cart item
+
+var total = cart.reduce((sum,item)=> sum+item.price,0);
+console.log("total value of cart :"+ total+ " Rs");
+//total value of cart :363797.1 Rs
