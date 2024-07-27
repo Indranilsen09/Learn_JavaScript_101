@@ -71,6 +71,12 @@ console.log(subs); //8
 
 //6. Generator Function: A function that returns a iterator object for generating a sequential values
 //  on demand. It is used to create an infinite sequence of values.
+//Syntax function* functionName(params(ifANy))
+/*{
+    yield expression;
+    yield expression;
+}
+*/
 function* funcName()
 {
     yield 1;

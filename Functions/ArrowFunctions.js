@@ -34,9 +34,12 @@ console.log(greets()); //Greetings, Undefined,
 console.log(greets('Indranil'));
 
 
-//Arrow Function with Rest parameters:
+//Arrow Function with Rest parameters:  Symbol = ...
 //Rest Parameters are used when we don't know the number of argument going to come
 let sum= (...numbers)=> numbers.reduce((acc,num)=> acc+num,0);
 
 var result = sum(6,2,9,0,2,5,6,7,4,3);
 console.log(" total Sum: "+result);
+
+//Object Array
+
