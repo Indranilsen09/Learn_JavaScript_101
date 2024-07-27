@@ -71,4 +71,49 @@ function print(name,age)
 print(); //hi undefined age undefined
 //as JS will Overwrite the latest Method Signature in Runtime so it omitted print(), with print(name,age)
 
+//To check this lets reverse the order
+function show(language,version)
+{
+    console.log("Hi "+ language+ " "+ version);
+}
+function show(language)
+{
+    console.log("Hi "+ language);
+}
+function show()
+{
+    console.log("Hi");
+}
+
+
+show(); //Hi 
+//proved that JS decide which one to overwrite on the order its written
+//here first method with signature: show(language,version) got overwritten by show(language)
+//and then show(language) got overwritten by show();
+//hence output log says:  Hi
+
+//run your testcases in remote machine
+//requirement : BrowserName, BrowserVersion, remoteExecution
+
+function displayBrowserInfo(BrowserName, BrowserVersion, remoteExecution)
+{
+    if((typeof BrowserName==='string') && typeof(remoteExecution==='boolean') && typeof(BrowserVersion)==='number'){
+            console.log(`Browser: ${BrowserName}, version : ${BrowserVersion}, remote Execution : ${remoteExecution}`);
+        }
+
+    else if(typeof BrowserName==='string' && BrowserVersion ==='number' && remoteExecution==='undefined')
+        {
+            console.log(`Browser: ${BrowserName}, version : ${BrowserVersion}`);
+        }
+        else if(typeof BrowserName==='string'){
+            console.log(`Browser: ${BrowserName}`);
+        }
+
+}
+
+//calling the displayBrowserInfo
+displayBrowserInfo('chrome', 90, true); //Browser: chrome, version : 90
+displayBrowserInfo('chrome', 90);
+displayBrowserInfo('chrome');
+
 
