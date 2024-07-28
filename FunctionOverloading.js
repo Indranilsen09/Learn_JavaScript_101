@@ -100,12 +100,11 @@ function displayBrowserInfo(BrowserName, BrowserVersion, remoteExecution)
     if((typeof BrowserName==='string') && typeof(remoteExecution==='boolean') && typeof(BrowserVersion)==='number'){
             console.log(`Browser: ${BrowserName}, version : ${BrowserVersion}, remote Execution : ${remoteExecution}`);
         }
-
-    else if(typeof BrowserName==='string' && BrowserVersion ==='number' && remoteExecution==='undefined')
+    else if(typeof BrowserName==='string' && typeof BrowserVersion =='number')
         {
             console.log(`Browser: ${BrowserName}, version : ${BrowserVersion}`);
         }
-        else if(typeof BrowserName==='string'){
+    else if(typeof BrowserName==='string'){
             console.log(`Browser: ${BrowserName}`);
         }
 
