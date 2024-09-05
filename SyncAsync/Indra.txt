@@ -1,0 +1,3 @@
+Hi, I am Indra, I am learning Sync & Async API,
+Now, I will read this File using fs.readFileSync() and fs.readFile() --With this two methods
+and also Will try to print the data..
