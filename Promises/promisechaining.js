@@ -23,7 +23,7 @@ function generateRandomNumber(max,delay)
     {
      setTimeout(()=>
         {
-            let min= 10;
+            let min= Number.MIN_SAFE_INTEGER;
             let randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
             console.log(randomNumber);
             if(randomNumber>0)
@@ -38,7 +38,7 @@ function generateRandomNumber(max,delay)
     });
 }
 
-generateRandomNumber(1000,3000)
+generateRandomNumber(Number.MAX_SAFE_INTEGER,3000)
         .then(result=>
         {
             console.log('Random number Generated..'+ result);
