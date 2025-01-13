@@ -11,3 +11,7 @@ Thanks to Great_Learnings for this Bite-sized courses to know JS from basics.
 #Certificate:
 ![image](https://github.com/user-attachments/assets/83486d86-dc3a-4c5c-8beb-237a4d604648)
 
+Hehehe!! One more Certificate to showcase, I am actually good in JS
+![image](https://github.com/user-attachments/assets/162671df-3e6c-446b-ab3e-729146764ec7)
+
+
